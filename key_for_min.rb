@@ -9,8 +9,8 @@ def key_for_min_value(name_hash)
     smallest_value = name_hash[1]
     name_hash.each do |item, value|
       if value < smallest_value
-        smallest_value = value
-        smallest_key = item
+        value = smallest_value
+        item = smallest_key
       end
     end
     smallest_key
